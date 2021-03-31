@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search Project</title>
+        <meta name="viewport" content="width=device.width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!-- THE NAVIGATION SECTION -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+
+            <!-- THE SEARCH FORM -->
+            <form class="form-inline my-2 my-lg-0" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="btn my-2 my-sm-0" type="submit" style="color: rgba(255,255,255,0.50);">
+                    Submit
+                </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- THE MAIN SECTION -->
+        <div class="container">
+            <h4 class="mt-5">Project Gallery</h4>
+
+            <!-- THE SEARCH FORM SECTION -->
+            <form name="searchForm">
+                <div class="form-row bg-light p-3 d-flex flex-1 flex-row text-nowrap align-items-center">
+                    <div class="form-group flex-grow-1 mr-2">
+                        <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
+                    </div>   
+                    <div class="form-group d-flex flex-row justify-content-center align-items-center border" style="background-color: #eee;">
+                        <label for="searchType" class="form-label ml-2 mr-2">Search by</label>
+                        <select name="searchType" class="form-control form-control-lg" placeholder="Name">
+                            <option value="Name">Name</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Authors">Authors</option>
+                            <option value="Tags">Tags</option>
+                        </select>
+                    </div>
+                    <div class="form-group ml-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- THE SEARCH RESULTS SECTION -->
+            <h5 class="mt-5">All Projects<small class="text-muted"> (0 results)</small></h5>
+            <!-- THE CARDS SECTION -->
+            <div class="row p-3">
+                <div class="col-sm-12 col-md-3 pl-0">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                            <div class="tags text-nowrap">
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Project Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                            <div class="tags text-nowrap">
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE FOOTER SECTION -->
+            <footer class="bg-light text-lg-start">
+                <!-- Copyright -->
+                <div class="text-right p-3 text-secondary bg-light">
+                Project Explorer © 2020
+                    <a class="text-dark" href="https://edconnect.ng/">Edconnect</a>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

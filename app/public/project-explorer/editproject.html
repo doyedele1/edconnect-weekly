@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit Project</title>
+        <meta name="viewport" content="width=device.width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!-- THE NAVIGATION SECTION -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+
+            <!-- THE SEARCH FORM -->
+            <form class="form-inline my-2 my-lg-0" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="btn my-2 my-sm-0" type="submit" style="color: rgba(255,255,255,0.50);">
+                    Submit
+                </button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- THE MAIN SECTION -->
+        <div class="container">
+            <!-- THE PROJECT DETAILS SECTION -->
+            <div class="row">
+                <div class="col-12 pl-0">
+                    <h3 class="mt-5">Project 1</h3>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-3 p-4 bg-light">
+                    Created By<br>
+                    Ade Chris
+                </div>
+                <div class="col-3 p-4 bg-light">
+                    Date Created<br>
+                    2020-08-30
+                </div>
+                <div class="col-3 p-4 bg-light">
+                    Last Updated<br>
+                    2020-08-30
+                </div>
+                <div class="col-3 bg-light d-flex align-items-center align-self-stretch justify-content-end">
+                    <button type="submit" class="btn btn-primary">View Project</button>
+                </div>
+            </div>
+
+            <!-- THE EDIT FORM SECTION -->
+            <div class="row">
+                <!-- THE EDIT PROJECT SECTION -->
+                <div class="col-6">
+                    <h5 class="mt-5">Edit Project</h5>
+                    <hr>
+                    <form name="editProject">
+                        <div class="mb-3 form-group">
+                            <label for="name" class="form-label">Project name</label>
+                            <input type="text" class="form-control" placeholder="Project 1">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="abstract" class="form-label">Project abstract</label>
+                            <textarea class="form-control" rows="10" id="abstract" placeholder="Project 1 is a very interesting project"></textarea>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="authors" class="form-label">Author(s)</label>
+                            <input type="text" class="form-control" placeholder="Ade Chris" id="authors">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="tags" class="form-label">Tag(s)</label>
+                            <input type="text" class="form-control" placeholder="#web" id="tags">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-5">Save</button>
+                    </form>
+                </div>
+                <!-- THE MANAGE PROJECT FILES SECTION -->
+                <div class="col-6">
+                    <h5 class="mt-5">Manage Project Files</h5>
+                    <hr>
+                    <form name="editProject">
+                        <div class="form-row d-flex align-items-center">
+                            <div class="form-group flex-grow-1">
+                                <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Click to open file browser">
+                            </div>
+                            <div class="form-group d-flex align-self-stretch">
+                                <button type="submit" class="btn btn-secondary">Browse</button>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="card">
+                        <h5 class="card-header">Project files</h5>
+                        <div class="card-body">
+                            <p class="card-text text-center">No file uploaded yet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- THE FOOTER SECTION -->
+            <footer class="bg-light text-lg-start">
+                <!-- Copyright -->
+                <div class="text-right p-3 text-secondary bg-light">
+                Project Explorer © 2020
+                    <a class="text-dark" href="https://edconnect.ng/">Edconnect</a>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+
+</html>
