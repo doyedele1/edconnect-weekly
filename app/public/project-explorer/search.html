@@ -40,12 +40,12 @@
             <!-- THE SEARCH FORM SECTION -->
             <form name="searchForm">
                 <div class="form-row bg-light p-3 d-flex flex-1 flex-row text-nowrap align-items-center">
-                    <div class="form-group flex-grow-1 mr-2">
-                        <input type="text" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags" name="searchTerm">
+                    <div class="form-group d-flex flex-grow-1 mr-2">
+                        <label for="searchTerm" class="form-label ml-2 mr-2 d-flex align-self-center order-2">Search by</label>
+                        <input type="text" class="form-control form-control-lg order-1" placeholder="Search project name, authors, abstract, tags" name="searchTerm">
                     </div>
                     <div class="form-group d-flex flex-row justify-content-center align-items-center border" style="background-color: #eee;">
-                        <label for="searchTerm" class="form-label ml-2 mr-2">Search by</label>
-                        <select name="searchTerm" class="form-control form-control-lg" placeholder="Name">
+                        <select name="searchType" class="form-control form-control-lg" placeholder="Name">
                             <option value="Name">Name</option>
                             <option value="Abstract">Abstract</option>
                             <option value="Authors">Authors</option>
