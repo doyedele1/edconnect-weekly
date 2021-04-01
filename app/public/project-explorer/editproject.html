@@ -68,19 +68,19 @@
                     <form name="editProject">
                         <div class="mb-3 form-group">
                             <label for="name" class="form-label">Project name</label>
-                            <input type="text" class="form-control" placeholder="Project 1">
+                            <input type="text" class="form-control" placeholder="Project 1" name="name">
                         </div>
                         <div class="mb-3 form-group">
                             <label for="abstract" class="form-label">Project abstract</label>
-                            <textarea class="form-control" rows="10" id="abstract" placeholder="Project 1 is a very interesting project"></textarea>
+                            <textarea class="form-control" rows="10" id="abstract" placeholder="Project 1 is a very interesting project" name="abstract"></textarea>
                         </div>
                         <div class="mb-3 form-group">
                             <label for="authors" class="form-label">Author(s)</label>
-                            <input type="text" class="form-control" placeholder="Ade Chris" id="authors">
+                            <input type="text" class="form-control" placeholder="Ade Chris" name="authors">
                         </div>
                         <div class="mb-3 form-group">
                             <label for="tags" class="form-label">Tag(s)</label>
-                            <input type="text" class="form-control" placeholder="#web" id="tags">
+                            <input type="text" class="form-control" placeholder="#web" name="tags">
                         </div>
                         <button type="submit" class="btn btn-primary mb-5">Save</button>
                     </form>
@@ -92,7 +92,7 @@
                     <form name="editProject">
                         <div class="form-row d-flex align-items-center">
                             <div class="form-group flex-grow-1">
-                                <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Click to open file browser">
+                                <input type="text" name="projectFile" class="form-control form-control-lg" placeholder="Click to open file browser">
                             </div>
                             <div class="form-group d-flex align-self-stretch">
                                 <button type="submit" class="btn btn-secondary">Browse</button>

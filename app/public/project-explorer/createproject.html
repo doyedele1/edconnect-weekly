@@ -38,22 +38,22 @@
             <div class="mx-auto w-75">
                 <h4 class="mt-5">Submit Project</h4>
                 <!-- THE REGISTER FORM SECTION -->
-                <form name="createProject">
+                <form name="submitProject">
                     <div class="mb-3 form-group">
                         <label for="name" class="form-label">Project name</label>
-                        <input type="text" class="form-control" placeholder="Enter project name">
+                        <input type="text" class="form-control" placeholder="Enter project name" name="name">
                     </div>
                     <div class="mb-3 form-group">
                         <label for="abstract" class="form-label">Project abstract</label>
-                        <textarea class="form-control" rows="10" id="abstract"></textarea>
+                        <textarea class="form-control" rows="10" name="abstract"></textarea>
                     </div>
                     <div class="mb-3 form-group">
                         <label for="authors" class="form-label">Author(s)</label>
-                        <input type="text" class="form-control" placeholder="Enter author names (separated by comma)" id="authors">
+                        <input type="text" class="form-control" placeholder="Enter author names (separated by comma)" name="authors">
                     </div>
                     <div class="mb-3 form-group">
                         <label for="tags" class="form-label">Tag(s)</label>
-                        <input type="text" class="form-control" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)" id="tags">
+                        <input type="text" class="form-control" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)" name="tags">
                     </div>
                     <button type="submit" class="btn btn-primary mb-5">Continue</button>
                 </form>
