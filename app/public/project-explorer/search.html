@@ -38,25 +38,36 @@
             <h4 class="mt-5">Project Gallery</h4>
 
             <!-- THE SEARCH FORM SECTION -->
-            <form name="searchForm">
-                <div class="form-row bg-light p-3 d-flex flex-1 flex-row text-nowrap align-items-center">
-                    <div class="form-group d-flex flex-grow-1 mr-2">
-                        <label for="searchTerm" class="form-label ml-2 mr-2 d-flex align-self-center order-2">Search by</label>
-                        <input type="text" class="form-control form-control-lg order-1" placeholder="Search project name, authors, abstract, tags" name="searchTerm">
-                    </div>
-                    <div class="form-group d-flex flex-row justify-content-center align-items-center border" style="background-color: #eee;">
-                        <select name="searchType" class="form-control form-control-lg" placeholder="Name">
-                            <option value="Name">Name</option>
-                            <option value="Abstract">Abstract</option>
-                            <option value="Authors">Authors</option>
-                            <option value="Tags">Tags</option>
-                        </select>
-                    </div>
-                    <div class="form-group ml-2 d-flex align-self-stretch">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                <div class="bg-light p-3">
+                    <form name="searchForm">
+                        <div class="form-row align-items-center">
+                            <div class="col-6">
+                                <div class="form-group mr-2 d-flex">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags" name="searchTerm">
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <label for="searchTerm" class="form-label text-nowrap align-items-center">Search by</label>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <select name="searchType" class="form-control form-control-lg" placeholder="Name">
+                                        <option value="Name">Name</option>
+                                        <option value="Abstract">Abstract</option>
+                                        <option value="Authors">Authors</option>
+                                        <option value="Tags">Tags</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            
 
             <!-- THE SEARCH RESULTS SECTION -->
             <h5 class="mt-5">All Projects<small class="text-muted"> (0 results)</small></h5>
